@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite A]">
+  <listeners>
+    <listener class-name="listeners.CustomListener"/>
+  </listeners>
+  <test name="Test 2(failed)">
+    <classes>
+      <class name="com.qtpselenium.framework.portfolio.LoginTest">
+        <methods>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.qtpselenium.framework.portfolio.LoginTest -->
+      <class name="com.qtpselenium.framework.portfolio.TopPerformAsset">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="topPerformAsset" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.qtpselenium.framework.portfolio.TopPerformAsset -->
+    </classes>
+  </test> <!-- Test 2(failed) -->
+</suite> <!-- Failed suite [Suite A] -->
